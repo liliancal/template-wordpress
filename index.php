@@ -8,9 +8,6 @@
 					<li><a href="#" class="button big special">Learn More</a></li>
 				</ul>
 			</section>
-
-			<?php get_header(); ?>
-
 		<section class="wrapper style1">
 			<div class="inner">
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -7,7 +7,7 @@
 
     <?php wp_head(); ?>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="wp-content/themes/lapiscinenew/assets/css/main.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
