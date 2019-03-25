@@ -15,13 +15,13 @@
 					<span class="image"><img src="<?php get_the_post_thumbnail_url(); ?>" alt="" /></span>
 					<div class="content">
 						<h2><?php the_title(); ?></h2>
-						By: <?php the_author(); ?>
+						Rédigé par <?php the_author(); ?>
 						<p><?php the_content(); ?></p>
 						<ul class="actions">
-									<li>
-										<a href="#" class="button alt">More</a>
-									</li>
-								</ul>
+							<li>
+								<a href="#" class="button alt">Lire la suite</a>
+							</li>
+						</ul>
 					</div>
 				</article>
 				<?php endwhile; else : ?>
@@ -39,14 +39,14 @@
 						<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
 					</header>
 					<div class="image-grid">
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic03.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic04.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic05.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic06.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic07.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic08.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic09.jpg" alt="" /></a>
-						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>images/pic10.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic03.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic04.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic05.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic06.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic07.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic08.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic09.jpg" alt="" /></a>
+						<a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic10.jpg" alt="" /></a>
 					</div>
 					<ul class="actions">
 						<li><a href="#" class="button big alt">Tempus Aliquam</a></li>

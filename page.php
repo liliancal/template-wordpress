@@ -18,3 +18,6 @@
   </div>
 </section>
 <?php get_footer(); ?>
+<script>
+  $("#header").attr('class', 'skel-layers-fixed');
+</script>
