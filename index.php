@@ -2,24 +2,28 @@
 		<!-- Banner -->
     <section id="banner">
 				<i class="icon fa-diamond"></i>
-				<h2>Etiam adipiscing</h2>
-				<p>Magna feugiat lorem dolor egestas</p>
+				<h2><?php bloginfo('name'); ?></h2>
+				<p><?php get_bloginfo( 'description' );?></p>
 				<ul class="actions">
 					<li><a href="#" class="button big special">Learn More</a></li>
 				</ul>
 			</section>
 		<section class="wrapper style1">
 			<div class="inner">
-				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php 
+				if ( have_posts() ):
+					while ( have_posts() ) :
+						the_post(); 
+				?>
 				<article class="feature left">
-					<span class="image"><img src="<?php get_the_post_thumbnail_url(); ?>" alt="" /></span>
+					<span class="image"><a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url(); ?>" alt="" /></a></span>
 					<div class="content">
-						<h2><?php the_title(); ?></h2>
-						Rédigé par <?php the_author(); ?>
-						<p><?php the_content(); ?></p>
+						<h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+						Rédigé par : <?php the_author(); ?>
+						<p><?php the_excerpt(); ?></p>
 						<ul class="actions">
 							<li>
-								<a href="#" class="button alt">Lire la suite</a>
+								<a href="<?php the_permalink();?>" class="button alt">Lire la suite</a>
 							</li>
 						</ul>
 					</div>
